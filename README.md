@@ -135,7 +135,7 @@ I'm a Computer Science (AI & ML) builder focused on the intersection of **local 
   <!-- GitHub Stats & Top Languages Side-by-Side (Dark/Light Adaptive) -->
   <picture>
     <source
-      srcset="https://github-readme-stats.vercel.app/api?username=amankumar-0001&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1b27"
+      srcset="https://github-profile-summary-cards.vercel.app/api?username=amankumar-0001&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1b27"
       media="(prefers-color-scheme: dark)"
     />
     <source
