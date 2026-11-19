@@ -1,33 +1,97 @@
 {
   "username": "AmanKumar-0001",
-  "generated_at": "2026-11-19T00:00:00Z",
-  "total_contributions": 13,
-  "current_streak": 1,
+  "generated_at": "2026-11-19T17:58:45Z",
+  "total_contributions": 19,
+  "current_streak": 2,
   "longest_streak": 2,
-  "active_days": 4,
+  "active_days": 5,
   "busiest_day": {
     "date": "2026-11-15",
-    "count": 6
+    "count": 7
   },
   "monthly": [
-    {"month": "2025-12", "label": "Dec", "count": 0},
-    {"month": "2026-01", "label": "Jan", "count": 0},
-    {"month": "2026-02", "label": "Feb", "count": 0},
-    {"month": "2026-03", "label": "Mar", "count": 0},
-    {"month": "2026-04", "label": "Apr", "count": 0},
-    {"month": "2026-05", "label": "May", "count": 0},
-    {"month": "2026-06", "label": "Jun", "count": 0},
-    {"month": "2026-07", "label": "Jul", "count": 0},
-    {"month": "2026-08", "label": "Aug", "count": 0},
-    {"month": "2026-09", "label": "Sep", "count": 0},
-    {"month": "2026-10", "label": "Oct", "count": 0},
-    {"month": "2026-11", "label": "Nov", "count": 13}
+    {
+      "month": "2025-12",
+      "label": "Dec",
+      "count": 0
+    },
+    {
+      "month": "2026-01",
+      "label": "Jan",
+      "count": 0
+    },
+    {
+      "month": "2026-02",
+      "label": "Feb",
+      "count": 0
+    },
+    {
+      "month": "2026-03",
+      "label": "Mar",
+      "count": 0
+    },
+    {
+      "month": "2026-04",
+      "label": "Apr",
+      "count": 0
+    },
+    {
+      "month": "2026-05",
+      "label": "May",
+      "count": 0
+    },
+    {
+      "month": "2026-06",
+      "label": "Jun",
+      "count": 0
+    },
+    {
+      "month": "2026-07",
+      "label": "Jul",
+      "count": 0
+    },
+    {
+      "month": "2026-08",
+      "label": "Aug",
+      "count": 0
+    },
+    {
+      "month": "2026-09",
+      "label": "Sep",
+      "count": 0
+    },
+    {
+      "month": "2026-10",
+      "label": "Oct",
+      "count": 0
+    },
+    {
+      "month": "2026-11",
+      "label": "Nov",
+      "count": 19
+    }
   ],
   "days": [
-    {"date": "2026-11-04", "count": 2},
-    {"date": "2026-11-14", "count": 1},
-    {"date": "2026-11-15", "count": 6},
-    {"date": "2026-11-18", "count": 4}
+    {
+      "date": "2026-11-04",
+      "count": 2
+    },
+    {
+      "date": "2026-11-14",
+      "count": 1
+    },
+    {
+      "date": "2026-11-15",
+      "count": 7
+    },
+    {
+      "date": "2026-11-18",
+      "count": 3
+    },
+    {
+      "date": "2026-11-19",
+      "count": 6
+    }
   ],
   "featured_repos": [
     {
@@ -38,17 +102,25 @@
       "language_color": "#3572A5",
       "stars": 0,
       "forks": 0,
-      "topics": ["OpenCV", "Computer Vision", "Local AI"]
+      "topics": [
+        "OpenCV",
+        "Computer Vision",
+        "Local AI"
+      ]
     },
     {
       "name": "Rent-manager",
       "url": "https://github.com/AmanKumar-0001/Rent-manager",
-      "description": "Multi-module native Android app for tenant and rent tracking with Google Sign-In and Google Sheets sync.",
+      "description": "Help you manage",
       "language": "Kotlin",
       "language_color": "#A97BFF",
       "stars": 0,
       "forks": 0,
-      "topics": ["Android", "Kotlin", "Sheets API"]
+      "topics": [
+        "Android",
+        "Kotlin",
+        "Sheets API"
+      ]
     },
     {
       "name": "Face-Based-Photo-and-Video-Organizer",
@@ -58,17 +130,25 @@
       "language_color": "#3572A5",
       "stars": 0,
       "forks": 0,
-      "topics": ["Face Recognition", "Media", "Python"]
+      "topics": [
+        "Face Recognition",
+        "Media",
+        "Python"
+      ]
     },
     {
       "name": "Battery-Monitor",
       "url": "https://github.com/AmanKumar-0001/Battery-Monitor",
       "description": "Lightweight desktop utility for real-time battery health, charge status, and power telemetry monitoring.",
       "language": "C#",
-      "language_color": "#178600",
+      "language_color": "#7355dd",
       "stars": 0,
       "forks": 0,
-      "topics": ["Desktop", "Telemetry", "C#"]
+      "topics": [
+        "Desktop",
+        "Telemetry",
+        "C#"
+      ]
     }
   ]
 }
