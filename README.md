@@ -1,3 +1,21 @@
+  <!-- Top Status & Social Bar -->
+  <p>
+    <img src="https://komarev.com/ghpvc/?username=AmanKumar-0001&label=Profile%20Views&color=6366F1&style=for-the-badge" alt="Profile Views" />
+    <a href="https://github.com/AmanKumar-0001?tab=followers">
+      <img src="https://img.shields.io/github/followers/AmanKumar-0001?label=Followers&style=for-the-badge&color=4F46E5&logo=github" alt="Followers" />
+    </a>
+    <a href="mailto:YOUR_EMAIL@example.com">
+      <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    </a>
+    <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME">
+      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    </a>
+    <a href="https://x.com/YOUR_X_USERNAME">
+      <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
+    </a>
+  </p>
+
+</div>
 
 <br/>
 
@@ -260,21 +278,3 @@ I'm a **Computer Science Engineering (AI & ML)** student and developer who loves
 
   <br/><br/>
 
-  <!-- Top Status & Social Bar -->
-  <p>
-    <img src="https://komarev.com/ghpvc/?username=AmanKumar-0001&label=Profile%20Views&color=6366F1&style=for-the-badge" alt="Profile Views" />
-    <a href="https://github.com/AmanKumar-0001?tab=followers">
-      <img src="https://img.shields.io/github/followers/AmanKumar-0001?label=Followers&style=for-the-badge&color=4F46E5&logo=github" alt="Followers" />
-    </a>
-    <a href="mailto:YOUR_EMAIL@example.com">
-      <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-    </a>
-    <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME">
-      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    </a>
-    <a href="https://x.com/YOUR_X_USERNAME">
-      <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
-    </a>
-  </p>
-
-</div>
