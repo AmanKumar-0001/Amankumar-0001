@@ -1,0 +1,196 @@
+name: Update Profile Cards
+
+on:
+  schedule:
+    # Runs daily at 00:30 UTC
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-cards:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install fonts and fontTools (pyftsubset)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-inter fonts-noto-mono fonts-dejavu-core
+          pip install --no-cache-dir fonttools
+
+      - name: Refresh contribution data JSON
+        env:
+          GH_TOKEN: ${{ secrets.PROFILE_PAT || github.token }}
+          GITHUB_USERNAME: AmanKumar-0001
+        run: |
+          python3 - <<'PY'
+          import datetime as dt
+          import json
+          import os
+          import urllib.request
+          from collections import defaultdict
+          from pathlib import Path
+
+          username = os.environ["GITHUB_USERNAME"]
+          token = os.environ["GH_TOKEN"]
+
+          query = """
+          query($login: String!) {
+            user(login: $login) {
+              contributionsCollection {
+                contributionCalendar {
+                  totalContributions
+                  weeks {
+                    contributionDays {
+                      date
+                      contributionCount
+                    }
+                  }
+                }
+              }
+              repositories(first: 20, ownerAffiliations: OWNER, privacy: PUBLIC, orderBy: {field: UPDATED_AT, direction: DESC}) {
+                nodes {
+                  name
+                  url
+                  description
+                  stargazerCount
+                  forkCount
+                  primaryLanguage { name color }
+                  repositoryTopics(first: 3) { nodes { topic { name } } }
+                }
+              }
+            }
+          }
+          """
+
+          req = urllib.request.Request(
+              "https://api.github.com/graphql",
+              data=json.dumps({"query": query, "variables": {"login": username}}).encode(),
+              headers={
+                  "Authorization": f"Bearer {token}",
+                  "Content-Type": "application/json",
+                  "User-Agent": "profile-cards-action",
+              },
+          )
+          with urllib.request.urlopen(req, timeout=30) as resp:
+              payload = json.loads(resp.read().decode())
+
+          user = payload["data"]["user"]
+          cal = user["contributionsCollection"]["contributionCalendar"]
+          all_days = [
+              {"date": d["date"], "count": int(d["contributionCount"])}
+              for w in cal["weeks"]
+              for d in w["contributionDays"]
+          ]
+          all_days.sort(key=lambda x: x["date"])
+
+          # Compute streaks, active days, and busiest day
+          active = [d for d in all_days if d["count"] > 0]
+          busiest = max(all_days, key=lambda d: (d["count"], d["date"]), default={"date": "", "count": 0})
+
+          longest = 0
+          run = 0
+          for d in all_days:
+              if d["count"] > 0:
+                  run += 1
+                  longest = max(longest, run)
+              else:
+                  run = 0
+
+          # Current streak (allow today to still be 0 if yesterday was active)
+          current = 0
+          idx = len(all_days) - 1
+          if idx >= 0 and all_days[idx]["count"] == 0:
+              idx -= 1
+          while idx >= 0 and all_days[idx]["count"] > 0:
+              current += 1
+              idx -= 1
+
+          # Last 12 calendar months
+          month_totals = defaultdict(int)
+          for d in all_days:
+              month_totals[d["date"][:7]] += d["count"]
+
+          today = dt.date.today()
+          monthly = []
+          y, m = today.year, today.month
+          for _ in range(12):
+              ym = f"{y:04d}-{m:02d}"
+              label = dt.date(y, m, 1).strftime("%b")
+              monthly.append({"month": ym, "label": label, "count": month_totals.get(ym, 0)})
+              m -= 1
+              if m == 0:
+                  m = 12
+                  y -= 1
+          monthly.reverse()
+
+          # Preserve curated descriptions/topics for featured repos if already present
+          data_path = Path("data/contributions.json")
+          existing = json.loads(data_path.read_text()) if data_path.exists() else {}
+          existing_repos = {r["name"]: r for r in existing.get("featured_repos", [])}
+
+          featured_names = list(existing_repos.keys()) or [
+              "Driver-drowin",
+              "Rent-manager",
+              "Face-Based-Photo-and-Video-Organizer",
+              "Battery-Monitor",
+          ]
+          live_repos = {r["name"]: r for r in user["repositories"]["nodes"]}
+
+          featured = []
+          for name in featured_names:
+              prev = existing_repos.get(name, {})
+              live = live_repos.get(name, {})
+              lang_obj = live.get("primaryLanguage") or {}
+              live_topics = [t["topic"]["name"] for t in (live.get("repositoryTopics") or {}).get("nodes", [])]
+              featured.append({
+                  "name": name,
+                  "url": live.get("url") or prev.get("url") or f"https://github.com/{username}/{name}",
+                  "description": live.get("description") or prev.get("description") or "",
+                  "language": lang_obj.get("name") or prev.get("language") or "Code",
+                  "language_color": lang_obj.get("color") or prev.get("language_color") or "#22D3EE",
+                  "stars": live.get("stargazerCount", prev.get("stars", 0)),
+                  "forks": live.get("forkCount", prev.get("forks", 0)),
+                  "topics": live_topics or prev.get("topics") or [],
+              })
+
+          out = {
+              "username": username,
+              "generated_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+              "total_contributions": int(cal["totalContributions"]),
+              "current_streak": current,
+              "longest_streak": longest,
+              "active_days": len(active),
+              "busiest_day": busiest,
+              "monthly": monthly,
+              "days": [d for d in all_days if d["count"] > 0],
+              "featured_repos": featured,
+          }
+          data_path.parent.mkdir(parents=True, exist_ok=True)
+          data_path.write_text(json.dumps(out, indent=2) + "\n", encoding="utf-8")
+          print(f"Updated {data_path}: {out['total_contributions']} contributions, {out['active_days']} active days.")
+          PY
+
+      - name: Render animated SVG cards
+        run: python3 scripts/build_cards.py
+
+      - name: Commit updated data and cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/contributions.json cards/
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh contribution data and SVG profile cards"
+            git push
+          else
+            echo "No changes to commit."
+          fi
