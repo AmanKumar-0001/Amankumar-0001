@@ -1,20 +1,13 @@
-  <!-- Top Status & Social Bar -->
-  <p>
-    <img src="https://komarev.com/ghpvc/?username=AmanKumar-0001&label=Profile%20Views&color=6366F1&style=for-the-badge" alt="Profile Views" />
-    <a href="https://github.com/AmanKumar-0001?tab=followers">
-      <img src="https://img.shields.io/github/followers/AmanKumar-0001?label=Followers&style=for-the-badge&color=4F46E5&logo=github" alt="Followers" />
-    </a>
-    <a href="mailto:YOUR_EMAIL@example.com">
-      <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-    </a>
-    <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME">
-      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    </a>
-    <a href="https://x.com/YOUR_X_USERNAME">
-      <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
-    </a>
-  </p>
+  <!-- Animated Hero Title & Tagline (Powered by Demolab - 100% Camo Reliable) -->
+  <a href="https://github.com/AmanKumar-0001">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=38&duration=4000&pause=1000&color=6366F1&center=true&vCenter=true&repeat=false&width=650&height=65&lines=Aman+Kumar" alt="Aman Kumar" />
+  </a>
+  <br/>
+  <a href="https://github.com/AmanKumar-0001">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=1000&color=818CF8&center=true&vCenter=true&width=750&height=40&lines=CS+(AI+%26+ML)+Engineer+%E2%80%A2+Local-First+AI+Builder;Minecraft+Fabric+Mods+%26+Automated+Video+Pipelines;Computer+Vision+%E2%80%A2+Android+(Kotlin)+%E2%80%A2+Open+Source" alt="Typing SVG" />
+  </a>
 
+  <br/><br/>
 </div>
 
 <br/>
@@ -267,14 +260,21 @@ I'm a **Computer Science Engineering (AI & ML)** student and developer who loves
 
 <div align="center">
 
-  <!-- Animated Hero Title & Tagline (Powered by Demolab - 100% Camo Reliable) -->
-  <a href="https://github.com/AmanKumar-0001">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=38&duration=4000&pause=1000&color=6366F1&center=true&vCenter=true&repeat=false&width=650&height=65&lines=Aman+Kumar" alt="Aman Kumar" />
-  </a>
-  <br/>
-  <a href="https://github.com/AmanKumar-0001">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=1000&color=818CF8&center=true&vCenter=true&width=750&height=40&lines=CS+(AI+%26+ML)+Engineer+%E2%80%A2+Local-First+AI+Builder;Minecraft+Fabric+Mods+%26+Automated+Video+Pipelines;Computer+Vision+%E2%80%A2+Android+(Kotlin)+%E2%80%A2+Open+Source" alt="Typing SVG" />
-  </a>
 
-  <br/><br/>
+  <!-- Top Status & Social Bar -->
+  <p>
+    <img src="https://komarev.com/ghpvc/?username=AmanKumar-0001&label=Profile%20Views&color=6366F1&style=for-the-badge" alt="Profile Views" />
+    <a href="https://github.com/AmanKumar-0001?tab=followers">
+      <img src="https://img.shields.io/github/followers/AmanKumar-0001?label=Followers&style=for-the-badge&color=4F46E5&logo=github" alt="Followers" />
+    </a>
+    <a href="mailto:YOUR_EMAIL@example.com">
+      <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    </a>
+    <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME">
+      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    </a>
+    <a href="https://x.com/YOUR_X_USERNAME">
+      <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
+    </a>
+  </p>
 
