@@ -1,69 +1,3 @@
-<p align="center">
-  <img src="cards/hero.svg" width="100%" alt="Aman Kumar — CSE (AI & ML) student building fast, local-first AI, vision & Android software." />
-</p>
-
-<p align="center">
-  <a href="https://github.com/AmanKumar-0001?tab=repositories"><img src="cards/tile-github.svg" width="32.5%" alt="GitHub Repositories" /></a>
-  <a href="mailto:amankumaraz.0009@gmail.com"><img src="cards/tile-email.svg" width="32.5%" alt="Email Aman Kumar" /></a>
-  <a href="https://github.com/AmanKumar-0001/Driver-drowin"><img src="cards/tile-focus.svg" width="32.5%" alt="Local AI Stack" /></a>
-</p>
-
-<p align="center">
-  <img src="cards/monthly-activity.svg" width="100%" alt="Monthly contributions chart with streak, active days, and busiest day" />
-</p>
-
-<p align="center">
-  <a href="https://github.com/AmanKumar-0001/Driver-drowin"><img src="cards/repo-driver-drowin.svg" width="100%" alt="Driver-drowin repository card" /></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/AmanKumar-0001/Rent-manager"><img src="cards/repo-rent-manager.svg" width="100%" alt="Rent-manager repository card" /></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/AmanKumar-0001/Face-Based-Photo-and-Video-Organizer"><img src="cards/repo-face-based-photo-and-video-organizer.svg" width="100%" alt="Face-Based-Photo-and-Video-Organizer repository card" /></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/AmanKumar-0001/Battery-Monitor"><img src="cards/repo-battery-monitor.svg" width="100%" alt="Battery-Monitor repository card" /></a>
-</p>
-
-<p align="center">
-  <img src="cards/contribution-graph.svg" width="100%" alt="GitHub contribution graph" />
-</p>
-
-
-<div align="center">
-
-  <!-- Animated Hero Title & Tagline (Powered by Demolab - 100% Camo Reliable) -->
-  <a href="https://github.com/AmanKumar-0001">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=38&duration=4000&pause=1000&color=6366F1&center=true&vCenter=true&repeat=false&width=650&height=65&lines=Aman+Kumar" alt="Aman Kumar" />
-  </a>
-  <br/>
-  <a href="https://github.com/AmanKumar-0001">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=1000&color=818CF8&center=true&vCenter=true&width=750&height=40&lines=CS+(AI+%26+ML)+Engineer+%E2%80%A2+Local-First+AI+Builder;Minecraft+Fabric+Mods+%26+Automated+Video+Pipelines;Computer+Vision+%E2%80%A2+Android+(Kotlin)+%E2%80%A2+Open+Source" alt="Typing SVG" />
-  </a>
-
-  <br/><br/>
-
-  <!-- Top Status & Social Bar -->
-  <p>
-    <img src="https://komarev.com/ghpvc/?username=AmanKumar-0001&label=Profile%20Views&color=6366F1&style=for-the-badge" alt="Profile Views" />
-    <a href="https://github.com/AmanKumar-0001?tab=followers">
-      <img src="https://img.shields.io/github/followers/AmanKumar-0001?label=Followers&style=for-the-badge&color=4F46E5&logo=github" alt="Followers" />
-    </a>
-    <a href="mailto:YOUR_EMAIL@example.com">
-      <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-    </a>
-    <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME">
-      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    </a>
-    <a href="https://x.com/YOUR_X_USERNAME">
-      <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
-    </a>
-  </p>
-
-</div>
 
 <br/>
 
@@ -274,4 +208,73 @@ I'm a **Computer Science Engineering (AI & ML)** student and developer who loves
       <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
     </a>
   </p>
+</div>
+
+
+
+<p align="center">
+  <img src="cards/hero.svg" width="100%" alt="Aman Kumar — CSE (AI & ML) student building fast, local-first AI, vision & Android software." />
+</p>
+
+<p align="center">
+  <a href="https://github.com/AmanKumar-0001?tab=repositories"><img src="cards/tile-github.svg" width="32.5%" alt="GitHub Repositories" /></a>
+  <a href="mailto:amankumaraz.0009@gmail.com"><img src="cards/tile-email.svg" width="32.5%" alt="Email Aman Kumar" /></a>
+  <a href="https://github.com/AmanKumar-0001/Driver-drowin"><img src="cards/tile-focus.svg" width="32.5%" alt="Local AI Stack" /></a>
+</p>
+
+<p align="center">
+  <img src="cards/monthly-activity.svg" width="100%" alt="Monthly contributions chart with streak, active days, and busiest day" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/AmanKumar-0001/Driver-drowin"><img src="cards/repo-driver-drowin.svg" width="100%" alt="Driver-drowin repository card" /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/AmanKumar-0001/Rent-manager"><img src="cards/repo-rent-manager.svg" width="100%" alt="Rent-manager repository card" /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/AmanKumar-0001/Face-Based-Photo-and-Video-Organizer"><img src="cards/repo-face-based-photo-and-video-organizer.svg" width="100%" alt="Face-Based-Photo-and-Video-Organizer repository card" /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/AmanKumar-0001/Battery-Monitor"><img src="cards/repo-battery-monitor.svg" width="100%" alt="Battery-Monitor repository card" /></a>
+</p>
+
+<p align="center">
+  <img src="cards/contribution-graph.svg" width="100%" alt="GitHub contribution graph" />
+</p>
+
+
+<div align="center">
+
+  <!-- Animated Hero Title & Tagline (Powered by Demolab - 100% Camo Reliable) -->
+  <a href="https://github.com/AmanKumar-0001">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=38&duration=4000&pause=1000&color=6366F1&center=true&vCenter=true&repeat=false&width=650&height=65&lines=Aman+Kumar" alt="Aman Kumar" />
+  </a>
+  <br/>
+  <a href="https://github.com/AmanKumar-0001">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=1000&color=818CF8&center=true&vCenter=true&width=750&height=40&lines=CS+(AI+%26+ML)+Engineer+%E2%80%A2+Local-First+AI+Builder;Minecraft+Fabric+Mods+%26+Automated+Video+Pipelines;Computer+Vision+%E2%80%A2+Android+(Kotlin)+%E2%80%A2+Open+Source" alt="Typing SVG" />
+  </a>
+
+  <br/><br/>
+
+  <!-- Top Status & Social Bar -->
+  <p>
+    <img src="https://komarev.com/ghpvc/?username=AmanKumar-0001&label=Profile%20Views&color=6366F1&style=for-the-badge" alt="Profile Views" />
+    <a href="https://github.com/AmanKumar-0001?tab=followers">
+      <img src="https://img.shields.io/github/followers/AmanKumar-0001?label=Followers&style=for-the-badge&color=4F46E5&logo=github" alt="Followers" />
+    </a>
+    <a href="mailto:YOUR_EMAIL@example.com">
+      <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    </a>
+    <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME">
+      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    </a>
+    <a href="https://x.com/YOUR_X_USERNAME">
+      <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
+    </a>
+  </p>
+
 </div>
