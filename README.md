@@ -43,7 +43,7 @@ I'm a **Computer Science Engineering (AI & ML)** student and developer who loves
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center">🏠 Collect Your Rent (Rent-manager)</h3>
+      <h3 align="center">🏠 Collect Your Rent (Rent manager)</h3>
       <p align="center">
         A multi-module native <b>Android</b> application built with Kotlin to streamline tenant & rent management. Features Google Sign-In Identity Authorization, automated Google Sheets sync, adaptive icons, and haptic UI polish.
       </p>
